@@ -35,7 +35,7 @@
                     <div class="col-md-12" id="billAmount">
                         <p>How much is your bill? 
 
-                            $<input type="number" id="billText" required/>
+                            $<input type="text" maxlength=6 size=6 id="billText" required value="" onkeypress="return isNumberKey(event)"/>
 
                         </p>
                         <br/>
