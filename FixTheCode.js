@@ -70,8 +70,6 @@ weaponAttack(adventuringParty.wizard, "Staff");
 
 
 /*EXAMPLE OUTPUT:
-
-
 Characters:                                                                                                                                                                                                  
  * Gandalf                                                                                                                                                                                                   
  * Conan                                                                                                                                                                                                     

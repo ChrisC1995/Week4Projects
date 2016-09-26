@@ -1,21 +1,32 @@
 $(function () {
     $("#calculate").on("click", calculateTipVariables);
     $("#tipResult").hide();
+    $("#resetButton").hide();
+    $("#resetButton").on("click", function(){
+        location.reload();
+    });
 });
 
 function calculateTipVariables(){
     var billAmount = $("#billText").val();
     var service = $("#serviceSelect").val();
     var split = $("#billSplit").val();
+
+    if (billAmount == ""|| service == null){
+        alert("Input All Fields!")
+    } 
+    else{
     console.log(billAmount);
     console.log(service);
     console.log(split);
     calculateTip(billAmount, service, split);
-}
+}}
 
 function calculateTip(billAmount, service, split){
 var result = (+billAmount * +service / +split).toFixed(2);
 console.log(result);
 $("#totalTip").append("$" + result);
 $("#tipResult").fadeIn();
+$("#resetButton").fadeIn();
+$("#calculate").fadeOut();
 }
