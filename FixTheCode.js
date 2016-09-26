@@ -31,17 +31,18 @@ var adventuringParty = {
 // This function lists all characters in the party
 function listCharacters() {
     console.log("Characters:");
-    for(obj in party) {
-        console.log(" * " + party[obj].name);
-    )
-}
+    for(obj in adventuringParty) {
+        console.log(" * " + adventuringParty[obj].name);
+}}
+
+
 
 // This function should list all weapons for the character
 function listWeapons(character) {
     console.log("Listing weapons for " + character.name + ":");
     for(i in character.weapons) {
-        var weapon = character.weapons[i];
-        console.log(" * " . weapon[name]);
+        var weapon = character.weapons[i].name;
+        console.log(" * " + weapon);
     }
 }
 
@@ -52,23 +53,23 @@ function weaponAttack(character, weaponName) {
     var maxDamage;
     for(i in character.weapons) {
         var weapon = character.weapons[i];
-        if(weapon.name == weaponName.toUpperCase()) {
+        if(weapon.name == weaponName) {
             maxDamage = weapon.damage;
         }
     }
-    console.log("He hits for " + Math.round( Math.random() * maxDamage ) + " damage");
+    console.log("He hits for " + Math.round( Math.random() * maxDamage) + " damage");
 }
 
 // Run the functions
 listCharacters(adventuringParty);
-listWeapons(wizard);
-listWeapons(warrior);
-weaponAttack("Warrior", "axe");
-weaponAttack("Wizard", "STAFF");
+listWeapons(adventuringParty.wizard);
+listWeapons(adventuringParty.warrior);
+weaponAttack(adventuringParty.warrior, "Axe");
+weaponAttack(adventuringParty.wizard, "Staff");
 
 
-/*
-EXAMPLE OUTPUT:
+
+/*EXAMPLE OUTPUT:
 
 
 Characters:                                                                                                                                                                                                  
@@ -83,5 +84,4 @@ Listing weapons for Conan:
 Conan attacks with his axe                                                                                                                                                                                   
 He hits for 17 damage                                                                                                                                                                                        
 Gandalf attacks with his STAFF                                                                                                                                                                               
-He hits for 3 damage         
- */
+He hits for 3 damage     */    
