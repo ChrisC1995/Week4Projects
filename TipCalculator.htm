@@ -35,7 +35,7 @@
                     <div class="col-md-12" id="billAmount">
                         <p>How much is your bill? 
 
-                            $<input type="number" name="billText" required/>
+                            $<input type="number" id="billText" required/>
 
                         </p>
                         <br/>
@@ -44,13 +44,13 @@
                             <div class="col-md-12">
                                 <p> What percent tip would you like to leave? </p>
                                 <div class="col-md-12 dropdown">
-                                    <select style="width: 300px" required>
+                                    <select style="width: 300px" required id = "serviceSelect">
                         <option disabled selected hidden value = "default"> Choose an Option </option>
-                        <option value = "5%"> Bad: 5% </option>
-                        <option value = "10%"> Alright: 10% </option>
-                        <option value = "15%" > Good: 15% </option>
-                        <option value = "20%"> Great: 20% </option>
-                        <option value = "30%"> Outstanding: 30% </option>
+                        <option value = ".05"> Bad: 5% </option>
+                        <option value = ".10"> Alright: 10% </option>
+                        <option value = ".15" > Good: 15% </option>
+                        <option value = ".20"> Great: 20% </option>
+                        <option value = ".30"> Outstanding: 30% </option>
                         </select>
                                 </div>
                             </div>
@@ -62,7 +62,7 @@
                                 <p> How many people are going to split the bill? </p>
                             </div>
                             <div class="col-md-12">
-                                <input type="number" name="billSplit" min="1" max="9" value="1" required/>People
+                                <input type="number" id="billSplit" min="1" max="9" value="1" required/>People
                             </div>
 
 
@@ -83,7 +83,7 @@
                 <div class = "row">
                     <div class= "col-md-12" id="tipResult">
                         <h1> Your tip is: </h1>
-                        <h2>@@tip@@</h2>
+                        <h2 id="totalTip"></h2>
                 </div>
                 </div>
 
