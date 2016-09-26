@@ -1,0 +1,97 @@
+<html>
+<!-- have to have jquery -->
+
+<head>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+    <!-- Jquery must be on top -->
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous">
+    <!-- bootstrap-->
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp"
+        crossorigin="anonymous">
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+        crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="TipCalculator.css" />
+    <script src="TipCalculator.js"></script>
+
+    <title>Tip Calculator</title>
+
+</head>
+
+<body>
+    <div id="h1text" class="container">
+        <div class="row">
+            <div>
+                <h1> Tip Calculator </h1>
+            </div>
+            <div id="background" class="col-md-6 col-md-offset-4" style=" width: 400px; background-image: url(http://www.theredherring.co.za/wp-content/uploads/2013/03/background-1024x808.jpg);">
+                <div class="row">
+                    <div class="col-md-12" id="billAmount">
+                        <p>How much is your bill? 
+
+                            $<input type="number" name="billText" required/>
+
+                        </p>
+                        <br/>
+                        <br/>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <p> What percent tip would you like to leave? </p>
+                                <div class="col-md-12 dropdown">
+                                    <select style="width: 300px" required>
+                        <option disabled selected hidden value = "default"> Choose an Option </option>
+                        <option value = "5%"> Bad: 5% </option>
+                        <option value = "10%"> Alright: 10% </option>
+                        <option value = "15%" > Good: 15% </option>
+                        <option value = "20%"> Great: 20% </option>
+                        <option value = "30%"> Outstanding: 30% </option>
+                        </select>
+                                </div>
+                            </div>
+                        </div>
+                        <br/>
+                        <br/>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <p> How many people are going to split the bill? </p>
+                            </div>
+                            <div class="col-md-12">
+                                <input type="number" name="billSplit" min="1" max="9" value="1" required/>People
+                            </div>
+
+
+                        </div>
+                        <br/>
+                        <br/>
+                        <div class ="row">
+                            <div class = "col-md-12" id="CalcButton">
+                                <button id="calculate" class ="btn btn-danger">Calculate</button>
+                                </div>
+                            </div>
+
+                    </div>
+
+                </div>
+
+                <br/>
+                <div class = "row">
+                    <div class= "col-md-12" id="tipResult">
+                        <h1> Your tip is: </h1>
+                        <h2>@@tip@@</h2>
+                </div>
+                </div>
+
+
+
+            </div>
+
+        </div>
+</body>
+
+</html>
