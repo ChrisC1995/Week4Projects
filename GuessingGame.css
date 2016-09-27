@@ -1,0 +1,50 @@
+body {
+    background-color: black;
+}
+
+#column1 {
+    height: 500px;
+    background-color: grey;
+    margin: 4%;
+}
+#column2 {
+    height: 500px;
+    background-color: grey;
+    margin: 4%;
+}
+#column3 {
+    height: 500px;
+    background-color: grey;
+    margin: 4%;
+}
+
+#in1 {
+    height: 100%;
+    font-size: 20em;
+    width: 100%;
+    background-color: transparent;
+    text-align: center;
+    border-style: none;
+    border: none;
+}
+#in2 {
+    height: 100%;
+    font-size: 20em;
+    width: 100%;
+    background-color: transparent;
+    text-align: center;
+    border-style: none;
+    border: none;
+}
+#in3 {
+    height: 100%;
+    font-size: 20em;
+    width: 100%;
+    background-color: transparent;
+    text-align: center;
+    border-style: none;
+    border: none;
+}
+#divButton {
+    text-align: center;
+}
