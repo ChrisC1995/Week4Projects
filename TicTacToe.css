@@ -1,0 +1,14 @@
+#board {
+    width: 400px;
+    height: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+button {
+    width:200px;
+    height:200px;
+}
+body{
+    margin-top: 50px;
+}
