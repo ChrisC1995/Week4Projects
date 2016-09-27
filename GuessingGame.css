@@ -1,6 +1,19 @@
 body {
     background-color: black;
 }
+h1 {
+    color: white;
+    font-size: 30pt;
+    text-align:  center;
+}
+
+p {
+    border-style: solid;
+    text-align: center;
+    border-width: 10px;
+    color: white;
+    border-color: white;
+}
 
 #column1 {
     height: 500px;

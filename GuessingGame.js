@@ -34,7 +34,27 @@ $("#subButton").on("click", function(){
     else if ($("#in3").val() == num1 || $("#in3").val() == num2){
         $("#column3").css("background-color", "yellow");}
     else $("#column3").css("background-color", "red");
+
+    if (($("#in1").val() == num1) && ($("#in2").val() == num2) && ($("#in3").val() == num3)){
+        alert("You Win!!!!!!");
+    }
 });
+$("#reload").hide();
+ var currentLives = 10;
+
+$("#subButton").on("click", function(){
+    currentLives = currentLives - 1;
+    $("#lives").html("You have " + currentLives + " lives left!");
+   if(currentLives == 0){
+    alert("You Lose");
+
+    $("#subButton").fadeOut();
+    $("#reload").fadeIn();}
+
+});
+$("#reload").on("click", function(){
+        location.reload();
+    });
 
 });
 
