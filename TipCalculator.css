@@ -7,11 +7,12 @@
 #h1text{
     text-align: center;
     color: white;
-    font-family: cursive;
+    
 }
 body{
     background-image: url(http://fairelepont.com/images/background-restaurant.jpg);
     background-size: cover;
+    font-family: 'Marck Script', cursive;
 }
 
 input{

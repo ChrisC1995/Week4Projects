@@ -403,7 +403,7 @@ console.log(player2);
 });
 $("#reset").on("click",function(){
     $(":button").html(null);
-    $("#reset").html("reset");
+    $("#reset").html("Reset");
     $(":button").prop("disabled", false);
     player1 = [];
     player2 = [];
