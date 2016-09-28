@@ -39,7 +39,7 @@ $("#subButton").on("click", function(){
         alert("You Win!!!!!!");
     }
 });
-$("#reload").hide();
+
  var currentLives = 10;
 
 $("#subButton").on("click", function(){
