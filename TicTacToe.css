@@ -27,3 +27,8 @@ h1{
 p {
     text-align: center;
 }
+
+.btn-info{
+    font-size: 40pt;
+    font-family: cursive;
+}

@@ -18,25 +18,27 @@ console.log(num3);
 
 $("#subButton").on("click", function(){
     if ($("#in1").val() == num1){
-        $("#column1").css("background-color", "green");}
+        $("#column1").css("background-color", "rgb(93, 148, 81)");}
     else if ($("#in1").val() == num2 || $("#in1").val() == num3){
-        $("#column1").css("background-color", "yellow");}
-    else $("#column1").css("background-color","red");
+        $("#column1").css("background-color", "darkgoldenrod");}
+    else $("#column1").css("background-color","firebrick");
     
     if ($("#in2").val() == num2){
-        $("#column2").css("background-color", "green");}
+        $("#column2").css("background-color", "rgb(93, 148, 81)");}
     else if ($("#in2").val() == num1 || $("#in2").val() == num3){
-        $("#column2").css("background-color", "yellow");}
-    else $("#column2").css("background-color", "red");
+        $("#column2").css("background-color", "darkgoldenrod");}
+    else $("#column2").css("background-color", "firebrick");
     
     if ($("#in3").val() == num3){
-        $("#column3").css("background-color", "green");}
+        $("#column3").css("background-color", "rgb(93, 148, 81)");}
     else if ($("#in3").val() == num1 || $("#in3").val() == num2){
-        $("#column3").css("background-color", "yellow");}
-    else $("#column3").css("background-color", "red");
+        $("#column3").css("background-color", "darkgoldenrod");}
+    else $("#column3").css("background-color", "firebrick");
 
     if (($("#in1").val() == num1) && ($("#in2").val() == num2) && ($("#in3").val() == num3)){
         alert("You Win!!!!!!");
+        $("#reload").fadeIn();
+        $("#subButton").fadeOut();
     }
 });
 
@@ -52,6 +54,7 @@ $("#subButton").on("click", function(){
     $("#reload").fadeIn();}
 
 });
+$("#reload").hide();
 $("#reload").on("click", function(){
         location.reload();
     });
